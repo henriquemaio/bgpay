@@ -295,7 +295,7 @@
 			} else {
 				$("#taxesContainer").show();
 			 	times.innerHTML = slider.value
-				output.innerHTML = (parseFloat($("#calc-value")[0].value) * taxes[slider.value]).toFixed(2).replace("." , ",");
+				output.innerHTML = ((parseFloat($("#calc-value")[0].value) * taxes[slider.value] ) / slider.value).toFixed(2).replace("." , ",");
 			}
 		}
 		
